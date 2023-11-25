@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Configuración del ícono de la pestaña del navegador -->
+        <link rel="shortcut icon" href="Logo.png" type="imege/icon">
+        
+        <!-- Título de la página -->
+        <title>Create Store</title>
+       
+       <!-- Configuración de preconexión para mejorar el rendimiento -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+        <!-- Enlace a la fuente de Google Fonts (Quicksand) -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Enlace a la hoja de estilo externa (style.css) -->
+        <link rel="stylesheet" type="text/css" href="style (4).css">
+       
+       <!-- Enlace adicional a otra hoja de estilo externa (style.css) -->
+        <link rel="stylesheet" href="style(4).css">
+        
+        <!-- Configuración de la codificación de caracteres -->
+        <meta charset="UTF-8">
+        
+        <!-- Etiqueta meta para especificar palabras clave relacionadas con el contenido del sitio -->
+        <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+
+        <!-- Etiqueta meta para proporcionar una breve descripción del contenido del sitio -->
+        <meta name="description" content="Una breve descripción del contenido del sitio">
+
+
+        <!-- Inclusión de FontAwesome Kit para iconos -->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous">
+        </script>
+
+
+    </head>
+<!--body-->
+    <body>
+        <header>
+
+    <a href="/Log in/iniciar sesion  (1).html" class="nav-link"></a>
+    <a href="/Agrotec-tienda del usuario/index.html" class="nav-link"></a>
+    <a href="/Create a store/index (6).html" class="nav-link"></a>
+    <a href="/Home/Home.html" class="nav-link"></a>
+
+             <!-- Casilla de verificación (checkbox) para alternar la visibilidad del menú -->
+            <input type="checkbox" name="" id="toggler">
+            <!-- Etiqueta asociada a la casilla de verificación, representando el icono de menú (bars) -->
+            <label for="toggler" class="fas fa-bars"></label>
+         
+            <!-- Enlace que sirve como el logotipo del sitio -->
+            <a href="/Home/Home.html" class="logo">AGROTEC<span>.</span></a>
+         
+        <!-- Menú de navegación principal -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#contact">contact us</a>
+        </nav>
+         
+        <!-- Iconos adicionales, posiblemente representando funciones como favoritos, carrito de compras y usuario -->
+        <div class="icons">
+            <a href="/Create a store/index (6).html" class="fas fa-home"></a>
+            <a href="/Agrotec-tienda del usuario/index.html" class="fas fa-shopping-cart"></a>
+            <a href="/Log in/iniciar sesion.html" class="fas fa-user"></a>
+        </div>
+         
+        </header>
+        <!-- header section ends -->
+
+        <!-- create store section starts -->
+
+        <br> <br>  <br>  <br>  <br>  <br>  <br> <br> <br> <br> <br> <br> 
+        <br> <br> <br> <br> <br> <br> 
+       
+
+            <!-- Logo de la aplicación o sitio web -->
+            <img src="agrotec.png" alt="">
+            
+          <!-- Contenedor del formulario -->
+            <div class="loging-box">
+              <!-- Formulario para crear una tienda -->
+                <form action="">
+                <!-- Título del formulario -->    
+                <h1>Create store</h1>
+                   
+                
+                
+                    <!-- Icono de descarga -->
+                    <ion-icon name="download"></ion-icon>
+                    
+                    <!-- Formulario para subir archivos (imágenes) -->
+                    <form action="procesar_imagen.php" method="post" enctype="multipart/form-data">
+                   <!-- Campo de entrada para seleccionar una imagen -->
+                        <input type="file" name="imagen" accept="image/*" required><br><br>
+                    
+                    <!-- Icono de imagen -->
+                    <ion-icon name="image"></ion-icon>
+                    
+                    <!-- Botón para enviar el formulario y subir la imagen -->
+                    <input type="submit" value="Upload imagen">
+                </form>
+           
+
+                <!-- Primer cuadro de entrada -->
+                <div class="input-box">
+                    <!-- Ícono de persona utilizando Ionicons -->
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <!-- Campo de entrada para el nombre de usuario -->
+                    <input type="Username" required>
+                    <!-- Etiqueta para el nombre de usuario -->
+                    <label>Username</label>
+                </div>
+
+                <!-- Segundo cuadro de entrada -->
+                <div class="input-box">
+                     <!-- Ícono de llamada telefónica utilizando Ionicons -->
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <!-- Campo de entrada para el número de teléfono -->
+                    <input type="Phone number" required>
+                    <!-- Etiqueta para el número de teléfono -->
+                    <label>Phone Number</label>
+                </div>
+
+                <!-- Tercer cuadro de entrada -->
+                <div class="input-box">
+                    <!-- Ícono de ubicación utilizando Ionicons -->
+                    <span class="icon"><ion-icon name="location"></ion-icon></span>
+                    <!-- Campo de entrada para la ubicación -->                    
+                    <input type="Ubication" required>
+                     <!-- Etiqueta para la ubicación -->       
+                    <label>Ubication</label>
+                </div>
+                <!-- Scripts para cargar Ionicons desde CDN -->
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+              
+        
+               
+                
+            <!-- Se aceptan los términos y condiciones -->
+            
+            <input type="checkbox" id="aceptar-terminos" name="aceptar-terminos" required>
+                        <label for="aceptar-terminos">I Accept The <a href="terminos_y_condiciones.html" target="_blank">Policy and Conditions</a></label><br><br>
+                        </form>
+                        
+                        <!-- Botones de continuar y regresar -->
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="/Home/Home.html" class= button class= btn btn-success me-md-2  type="button"></button>
+                             <button class="btn btn-success me-md-2" type="button">Back</button>
+                             <button class="btn btn-success" type="button">Next</button>
+  
+                           </div>
+                        </div>
+
+          </form>
+          <!-- create store section ends -->
+          
+          <!-- footer section starts -->
+
+          <br>  <br>  <br>  <br>  <br>  <br> <br> <br> <br>
+
+         
+<section class="footer">
+    <!-- Contenedor principal para las cajas de información -->
+    <div class="box-container">
+         <!-- Caja de enlaces rápidos -->
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">products</a>
+            <a href="#">contact</a>
+        </div>
+         <!-- Caja de enlaces adicionales -->
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+          <!-- Caja de enlaces de ubicaciones -->
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">East Panama</a>
+            <a href="#">West Panama</a>
+            <a href="#">Chiriqui</a>
+            <a href="#">Veraguas</a>
+            <a href="#">Los Santos</a>
+            <a href="#">Bocas del toro</a>
+        </div>
+        <!-- Caja de información de contacto -->
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+507 6048-2729</a>
+            <a href="#">+507 244-0634</a>
+            <a href="#">agrotec.info@gmail.com</a>
+           
+        </div>
+ 
+    </div>
+     <!-- Créditos del sitio -->
+    <div class="credit"> created by <span> Ms. Martinez Web Designer </span> | all rights reserved</div>
+ 
+</section>
+ 
+<!-- footer section ends -->
+            
+            </body>
+            </html>
